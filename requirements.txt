@@ -1,1 +1,10 @@
-
+streamlit
+opencv-python
+torch
+ultralytics
+pyttsx3
+geopy
+geocoder
+threading
+pandas
+numpy
