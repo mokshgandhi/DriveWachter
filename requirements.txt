@@ -1,4 +1,6 @@
 streamlit
+streamlit-folium
+folium
 opencv-python
 torch
 ultralytics
