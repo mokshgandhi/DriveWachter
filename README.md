@@ -1,8 +1,9 @@
 # DriveWächter
-Prototype developed for Volkswagen i.mobilothon 5.0
-Team: DriveWächter
-Authors: Moksh Gandhi & Trilok Bhavsar
--
+
+ Prototype developed for Volkswagen i.mobilothon 5.0
+ Team: DriveWächter
+ Authors: Moksh Gandhi & Trilok Bhavsar
+
 
 DriveWächter (“Road Guardian” in German) is a real-time road hazard detection system that identifies potholes using deep-learning segmentation, blurs sensitive visual information, and automatically logs hazard locations using geolocation. Built as a functional prototype for Volkswagen i.mobilothon 5.0, it demonstrates how computer vision can enhance road safety and support driver-assistance systems.
 
@@ -52,24 +53,22 @@ Powered by a custom-trained model (PrivacyGuard https://app.roboflow.com/drivewa
 
 This project uses two custom-trained models hosted on Roboflow:
 
-# 1. PotholeWächter – Pothole Segmentation Model
-
+- 1. PotholeWächter – Pothole Segmentation Model
 Dataset + Model:
 https://app.roboflow.com/drivewachter/potholewachter-yjrxy/models
 
-# 2. PrivacyGuard – Sensitive Information Blur Model
-
+- 2. PrivacyGuard – Sensitive Information Blur Model
 Dataset + Model:
 https://app.roboflow.com/drivewachter/privacyguard-zo4qz/models
 
-# Roboflow Workspace (DriveWächter)
-
+- Roboflow Workspace (DriveWächter)
 All datasets and experiments:
 https://app.roboflow.com/drivewachter
 
 These models were trained specifically for the DriveWächter project.
 
 # Project Structure
+
 DriveWachter/
 │
 ├── weights/
@@ -87,6 +86,7 @@ DriveWachter/
 │
 ├── app.py
 └── README.md
+
 
 # Installation
 Clone the Repository
