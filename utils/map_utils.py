@@ -2,22 +2,32 @@ import folium
 from streamlit_folium import st_folium
 
 def render_map(lat, lon, hazards=[]):
-    # Create folium map centered at current location
+    try:
+        lat = float(lat)
+        lon = float(lon)
+    except (TypeError, ValueError):
+        raise ValueError(f"Invalid lat/lon values for map: {lat}, {lon}")
+
     fmap = folium.Map(location=[lat, lon], zoom_start=16)
-    
-    # Add user’s current GPS position
+
+    # user’s current GPS position
     folium.Marker(
         [lat, lon],
         tooltip="Current Position",
         icon=folium.Icon(color='blue', icon='car', prefix='fa')
     ).add_to(fmap)
-    
-    # Add pothole hazard markers
+
+    # pothole hazard markers
     for h in hazards:
-        folium.Marker(
-            [h['lat'], h['lon']],
-            popup=f"Pothole Detected (ID: {h['id']})",
-            icon=folium.Icon(color='red', icon='warning', prefix='fa')
-        ).add_to(fmap)
+        try:
+            h_lat = float(h.get('lat'))
+            h_lon = float(h.get('lon'))
+            folium.Marker(
+                [h_lat, h_lon],
+                popup=f"Pothole Detected (ID: {h.get('id', 'N/A')})",
+                icon=folium.Icon(color='red', icon='warning', prefix='fa')
+            ).add_to(fmap)
+        except (TypeError, ValueError):
+            print(f"⚠️ Skipping invalid hazard location: {h}")
 
     return fmap
