@@ -15,7 +15,7 @@ The project is optimized for real-time performance through a streamlined Streaml
 
 # Features
 - Real-Time Pothole Segmentation
-- Uses a custom YOLOv11 instance segmentation model
+- Uses a custom YOLOv11 instance segmentation model (https://app.roboflow.com/drivewachter/potholewachter-yjrxy/models)
 - Visualizes potholes with smooth, translucent polygon masks
 - Displays minimal severity labels with confidence scores
 - Severity Classification
