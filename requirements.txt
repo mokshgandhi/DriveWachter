@@ -1,7 +1,7 @@
 streamlit
 streamlit-folium
 folium
-opencv-python
+opencv-python-headless
 torch
 ultralytics
 pyttsx3
