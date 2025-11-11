@@ -4,7 +4,6 @@ folium
 opencv-python-headless
 torch
 ultralytics
-pyttsx3
 geopy
 geocoder
 pandas
