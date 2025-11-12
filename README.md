@@ -9,6 +9,8 @@ DriveWächter (**“Road Guardian”** in German) is a real-time road hazard det
 
 This repository contains the full implementation of the DriveWächter prototype.
 
+## Demo: https://drivewachter.streamlit.app/
+
 ## Overview
 DriveWächter processes a live video stream (webcam or uploaded file), detects potholes using a YOLOv11 segmentation model, overlays smooth polygon masks based on severity, and logs hazard locations onto an interactive map. Sensitive information—such as license plates and faces—is blurred automatically.
 
