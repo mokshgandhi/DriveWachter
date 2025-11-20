@@ -92,7 +92,7 @@ DriveWachter/
 
 ### Clone the Repository
 ```
-git clone https://github.com/<your-username>/DriveWachter
+git clone https://github.com/mokshgandhi/DriveWachter
 cd DriveWachter
 ```
 
